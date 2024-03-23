@@ -11,7 +11,6 @@ import java.util.UUID;
 @Repository
 public interface RegisterFormInterface extends MongoRepository<RegistoreModel, UUID> {
 
-
     boolean existsByUserName(String name);
     Optional<RegistoreModel> findByUserName(String name);
 

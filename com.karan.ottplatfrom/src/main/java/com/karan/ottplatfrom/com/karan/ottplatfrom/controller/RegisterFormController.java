@@ -21,6 +21,7 @@ public class RegisterFormController {
 
     @PostMapping("/register")
     public String newRegisterForm(@RequestBody RegistoreModel model) throws JsonProcessingException {
+        logger.info("Save the Registore Model");
         return regiService.newRegisterForm(model);
     }
 

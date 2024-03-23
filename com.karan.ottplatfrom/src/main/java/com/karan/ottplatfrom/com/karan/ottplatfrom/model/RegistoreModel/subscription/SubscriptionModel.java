@@ -16,7 +16,6 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SubscriptionModel {
-
     @Id
     private String subId;
     private String userName;
@@ -26,4 +25,5 @@ public class SubscriptionModel {
     private Timestamp subscriptionEdndata;
     private String price;
     private String status;
+
 }

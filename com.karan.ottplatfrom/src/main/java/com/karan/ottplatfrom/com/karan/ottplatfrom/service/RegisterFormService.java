@@ -71,6 +71,7 @@ public class RegisterFormService {
     public ResponseEntity<RegistoreModel> getUserInfo(String userName){
        RegistoreModel model = new RegistoreModel();
         Optional<RegistoreModel> user = registoryInterface.findByUserName(userName);
+
         if(user.isPresent()){
             model = user.get();
             return ResponseEntity.status(HttpStatus.OK).body(model);

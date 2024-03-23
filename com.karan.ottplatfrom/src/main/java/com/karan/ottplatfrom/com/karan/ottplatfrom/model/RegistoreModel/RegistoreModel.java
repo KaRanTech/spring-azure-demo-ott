@@ -23,4 +23,5 @@ public class RegistoreModel implements Serializable {
     private String password;
     private String gender;
     private Address address;
+
 }

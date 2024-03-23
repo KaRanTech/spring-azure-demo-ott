@@ -14,7 +14,8 @@ public class SubscriptionController {
     private SubscriptionService service;
 
     @PostMapping("/subscribe")
-    public ResponseEntity<SubscriptionModel> subscribe(@RequestBody SubscriptionModel model){
+    public ResponseEntity<SubscriptionModel>
+                 subscribe(@RequestBody SubscriptionModel model){
         return service.subscribe(model);
     }
 }

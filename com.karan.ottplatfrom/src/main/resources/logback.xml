@@ -6,7 +6,6 @@
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
-
     <logger name="com.karan.ottplatfrom" level="INFO" />
 
     <root level="INFO">
