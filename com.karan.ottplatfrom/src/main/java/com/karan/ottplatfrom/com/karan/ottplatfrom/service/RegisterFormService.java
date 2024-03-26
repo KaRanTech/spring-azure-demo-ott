@@ -46,7 +46,7 @@ public class RegisterFormService {
         }
     }
 
-    public static boolean userNameValidation(RegistoreModel model){
+    public boolean userNameValidation(RegistoreModel model){
         String regex = "^[A-Za-z]\\w{5,29}$";
         boolean userNameValid = false;
         if(!model.getUserName().isEmpty()){

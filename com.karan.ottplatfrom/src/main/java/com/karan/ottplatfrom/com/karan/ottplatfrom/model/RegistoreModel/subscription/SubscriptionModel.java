@@ -21,8 +21,8 @@ public class SubscriptionModel {
     private String userName;
     private RegistoreModel userDetails;
     private Subscription perk;
-    private Timestamp subscibeData;
-    private Timestamp subscriptionEdndata;
+    private String subscibeData;
+    private String subscriptionEdndata;
     private String price;
     private String status;
 

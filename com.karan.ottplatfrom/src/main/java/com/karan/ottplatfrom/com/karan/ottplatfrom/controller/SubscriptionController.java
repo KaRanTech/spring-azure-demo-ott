@@ -1,5 +1,6 @@
 package com.karan.ottplatfrom.com.karan.ottplatfrom.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.karan.ottplatfrom.com.karan.ottplatfrom.model.RegistoreModel.subscription.SubscriptionModel;
 import com.karan.ottplatfrom.com.karan.ottplatfrom.service.SubscriptionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +15,14 @@ public class SubscriptionController {
     private SubscriptionService service;
 
     @PostMapping("/subscribe")
-    public ResponseEntity<SubscriptionModel>
-                 subscribe(@RequestBody SubscriptionModel model){
+    public ResponseEntity
+                 subscribe(@RequestBody SubscriptionModel model) throws JsonProcessingException {
         return service.subscribe(model);
+    }
+
+    @PatchMapping("/updateSubscribe")
+    public  ResponseEntity update(@RequestBody SubscriptionModel model){
+        return service.updateSub(model);
+
     }
 }
